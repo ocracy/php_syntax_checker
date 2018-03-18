@@ -3,7 +3,7 @@ import os, re, sys, subprocess
 
 class phpSyntaxCheckerCommand(sublime_plugin.EventListener):
   # Command refers to $PATH environment variable
-  EXECUTE_COMMAND = "php -l"
+  EXECUTE_COMMAND = "/usr/bin/php -l"
 
   def on_post_save(self, view):
     file_path = view.file_name()
